@@ -67,9 +67,9 @@ resource "google_container_cluster" "cluster" {
     enable_private_nodes    = false
     enable_private_endpoint = false
     master_ipv4_cidr_block  = var.master_ipv4_cidr_block
-    master_global_access_config {
-      enabled = true
-    }
+    # master_global_access_config {
+    #   enabled = true
+    # }
   }
 
   workload_identity_config {
